@@ -13,7 +13,6 @@ namespace Xam.iOS.ScreenRotation
 
         public override UIWindow Window
 		{
-            //Test
 			get;
 			set;
 		}
