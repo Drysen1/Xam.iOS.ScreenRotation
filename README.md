@@ -9,7 +9,7 @@ To support this I added a public bool in the appdelegate
   ```
   
   
-And override the GetSupportedInterfaceOrientation
+And override the GetSupportedInterfaceOrientation, please note that the first if checks if the user is on an iPad and will thus not restrict any orientation.
 
 ```C#
         public override UIInterfaceOrientationMask GetSupportedInterfaceOrientations(UIApplication application, UIWindow forWindow)
@@ -25,7 +25,7 @@ And override the GetSupportedInterfaceOrientation
         }
   ```
   
-  Then how to use this is on whatever page you need to allow rotation on you override the ViewWillAppear and ViewWillDisappear, please note that the first if checks if the user is on an iPad and will thus not restrict any orientation.
+  Then how to use this is on whatever page you need to allow rotation on you override the ViewWillAppear and ViewWillDisappear.
   
   ```C#
           public override void ViewWillAppear(bool animated)
